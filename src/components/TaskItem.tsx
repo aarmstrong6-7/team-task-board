@@ -20,7 +20,7 @@ export function TaskItem({ task, onEdit, onDelete }: Props) {
 
   function handleToggle() {
     setCompleted((prev) => !prev);
-  }
+    // await onEdit(task.id, { completed: !completed });
 
   async function handleSaveEdit() {
     setEditError(null);

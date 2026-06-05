@@ -52,7 +52,7 @@ export default function App() {
       setBanner({ type: "success", text: "Task added." });
     } catch (err) {
       console.error(err);
-      setBanner({ type: "success", text: "Task added." });
+      setBanner({ type: "error", text: "Failed to add task." });
     } finally {
       setBusy(false);
     }
